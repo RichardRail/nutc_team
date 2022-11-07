@@ -45,10 +45,24 @@
                 left: 0;
                 background-color: black;
             }
-            </style>
+            .container {
+
+            display: flex;
+            flex-direction: row;}
+                
+            .item {
+
+            border: 1% ;
+            text-align: left;
+            margin: 5%;}
+            img {
+                height: 150px;
+                width: 150px;
+            }
+        </style>
     </head>
         <div class="up"> <!-- 上方黑色部 --> 
-            <center><h1 class="container"><b>網站簡介</b></h1></center> <!-- 大標題 --> 
+            <center><h1 class="container"><b>參考資料</b></h1></center> <!-- 大標題 --> 
             <div> </div>
             <!-- 回首頁 --> 
             <button type="button" class="btn btn-primary" style="margin-right: 25px; margin-left: 25px; margin-bottom: 10px;"><a href="https://richardrail.github.io/nutc_team/index.html" style="color:black"><b>回首頁</b></a></button> 
@@ -59,7 +73,31 @@
         <body style="background-color:#808080"> <!-- 背景顏色 --> 
             <center><div class="l">
                 <!--參考資料-->
-                <h1 style="color:black"><b>參考資料</b></h1>
+                <h1 style="color:black"><b>資料來源</b></h1>
             </div></center>
+            <div class="container" >
+                <div class="item">
+                    <a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">
+                        <img src="img/wiki.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.mohw.gov.tw/mp-1.html">
+                        <img src="img/logo.png" style="max-width: 100%;">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.bbc.com/news">
+                        <img src="img/bbc.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://weibo.com/tw?ssl_rnd=1667840951.4239">
+                        <img src="img/wb.png">
+                    </a>
+                </div>
+            </div>
         </body>
 </html>
+
+
