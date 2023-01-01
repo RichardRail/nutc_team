@@ -51,15 +51,28 @@
           console.log(testjson)
           import data from 'https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json' assert { type: 'JSON' };
           console.log(data);*/
-          fetch('https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json')
+          /*fetch('https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json')
+          mode: 'no-cors'
           .then((response) => {
+            mode: 'no-cors'
             return response.json();
           })
           .then((response) => {
+              mode: 'no-cors'
               console.log(response); 
           })
           .catch((error) => {
               console.log(`Error: ${error}`);
+          })*/
+          fetch('https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json', {
+            mode: 'no-cors'
+          })
+          .then(res => {
+            console.log('response', res)
+            return res.text()
+          })
+          .then(body => {
+            console.log('body', body)
           })
         </script>
     </head>
