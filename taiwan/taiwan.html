@@ -46,10 +46,12 @@
                 });
               </script>
         </body>
-        <script>
-          testjson = 'https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json'
+        <script type="module">
+          /*testjson = 'https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json'
           console.log(testjson)
-          /*fetch('https://data.startupterrace.tw/api/dataset_api/0f00336d-a39d-4e0b-9e01-520226384dfd')
+          import data from 'https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json' assert { type: 'JSON' };
+          console.log(data);*/
+          fetch('https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.json')
           .then((response) => {
             return response.json();
           })
@@ -58,7 +60,7 @@
           })
           .catch((error) => {
               console.log(`Error: ${error}`);
-          })*/
+          })
         </script>
     </head>
 </html>
